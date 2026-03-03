@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Habitat ReStore Delivery | New Beginnings Moving & Hauling</title>
+  <meta name="description" content="Schedule your Habitat ReStore Delivery with simple, transparent pricing. $75 (0–5 miles) or $100 (5–10 miles). Book via Calendly." />
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#111827;
+      --muted:#4b5563;
+      --border:#e5e7eb;
+      --card:#f9fafb;
+      --accent:#0f766e;  /* teal */
+      --accent-dark:#0b5f58;
+      --shadow: 0 10px 25px rgba(0,0,0,.06);
+      --radius:16px;
+      --max: 980px;
+    }
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.45;
+    }
+
+    a{ color:inherit; }
+
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 20px 16px;
+    }
+
+    section{
+      padding: 28px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    section:first-of-type{
+      border-top: 0;
+      padding-top: 18px;
+    }
+
+    .hero{
+      padding: 18px 0 28px;
+      text-align: center;
+    }
+
+    h1{
+      margin: 0 0 10px;
+      font-size: clamp(28px, 4.8vw, 44px);
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    h2{
+      margin: 0 0 14px;
+      font-size: clamp(20px, 3.4vw, 28px);
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    p{
+      margin: 0 0 14px;
+      font-size: 16px;
+      color: var(--muted);
+    }
+
+    .trust{
+      margin-top: 10px;
+      font-size: 14px;
+      color: var(--muted);
+      text-align: center;
+    }
+.hero-inner{
+  padding: 26px 26px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+    .btn{
+      display: inline-flex;
+      align-items:center;
+      justify-content:center;
+      width: 100%;
+      max-width: 420px;
+      padding: 16px 18px;
+      border-radius: 14px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration:none;
+      font-weight: 700;
+      font-size: 18px;
+      border: 2px solid var(--accent);
+    }
+
+    .btn:focus{
+      outline: 3px solid rgba(15,118,110,.25);
+      outline-offset: 2px;
+    }
+
+    .btn:hover{
+      background: var(--accent-dark);
+      border-color: var(--accent-dark);
+    }
+
+    .btn-row{
+      margin-top: 16px;
+    }
+
+    .grid{
+      display: grid;
+      gap: 14px;
+    }
+
+    .card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .step{
+      display:flex;
+      gap: 12px;
+      align-items:flex-start;
+    }
+
+    .badge{
+      flex: 0 0 auto;
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      background: #e6fffb;
+      border: 1px solid #bfeee8;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight: 800;
+      color: var(--accent);
+    }
+
+    .step h3{
+      margin: 0 0 4px;
+      font-size: 18px;
+      color: var(--text);
+    }
+
+    .step p{
+      margin:0;
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    .pricing{
+      display:grid;
+      gap: 14px;
+    }
+
+    .price-card{
+      background: #ffffff;
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .price{
+      font-size: 40px;
+      font-weight: 900;
+      letter-spacing:-0.02em;
+      margin: 0;
+      line-height: 1;
+    }
+
+    .price-sub{
+      margin: 8px 0 14px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    ul{
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .included-list{
+      margin-top: 14px;
+      display:grid;
+      gap: 8px;
+      padding: 14px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: #ffffff;
+    }
+
+    .check{
+      display:flex;
+      gap: 10px;
+      align-items:flex-start;
+      color: var(--text);
+      font-size: 16px;
+    }
+
+    .check span{
+      color: var(--muted);
+    }
+
+    .bold-note{
+      margin-top: 12px;
+      font-weight: 800;
+      color: var(--text);
+      font-size: 16px;
+    }
+
+    .two-col{
+      display:grid;
+      gap: 14px;
+    }
+
+    .col h3{
+      margin:0 0 10px;
+      font-size: 18px;
+    }
+
+    .footer{
+      border-top: 1px solid var(--border);
+  padding: 22px 0 30px;
+  text-align: center;
+    }
+
+    .footer .name{
+      font-weight: 900;
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .footer .contact{
+      font-size: 16px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .footer small{
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .cta-small{
+      margin-top: 10px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* Desktop enhancements while staying simple */
+    @media (min-width: 720px){
+      .wrap{ padding: 34px 20px; }
+      .grid{ grid-template-columns: repeat(3, 1fr); }
+      .pricing{ grid-template-columns: repeat(2, 1fr); }
+      .two-col{ grid-template-columns: repeat(2, 1fr); }
+      .btn{ width: auto; }
+      .hero p{ font-size: 18px; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+
+    <!-- SECTION 1: TOP / HERO -->
+    <section class="hero" aria-label="Hero">
+      <h1>Schedule Your Habitat ReStore Delivery</h1>
+      <p>Professional, reliable delivery on our scheduled delivery days with simple, transparent pricing.</p>
+      <div class="trust">Licensed &amp; Insured • Professional Two-Man Crews • Local &amp; Trusted</div>
+
+      <div class="btn-row">
+        <!-- Replace the # with your Calendly link -->
+        <a class="btn" href="#" target="_blank" rel="noopener">Schedule My Delivery</a>
+      </div>
+    </section>
+
+    <!-- SECTION 2: HOW IT WORKS -->
+    <section aria-label="How it works">
+      <h2>How It Works</h2>
+
+      <div class="grid">
+        <div class="card step">
+          <div class="badge">1</div>
+          <div>
+            <h3>Choose your delivery day</h3>
+            <p>(Wednesday or Saturday)</p>
+          </div>
+        </div>
+
+        <div class="card step">
+          <div class="badge">2</div>
+          <div>
+            <h3>Answer a few quick questions</h3>
+            <p>(So we can prepare correctly)</p>
+          </div>
+        </div>
+
+        <div class="card step">
+          <div class="badge">3</div>
+          <div>
+            <h3>Confirm and receive your delivery</h3>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PRICING (VERY IMPORTANT) -->
+    <section aria-label="Pricing">
+      <h2>Pricing</h2>
+
+      <div class="pricing">
+        <div class="price-card" aria-label="$75 Delivery">
+          <p class="price">$75</p>
+          <div class="price-sub"><strong>Delivery</strong></div>
+          <ul>
+            <li>Up to 3 items</li>
+            <li>0–5 miles from the ReStore</li>
+          </ul>
+        </div>
+
+        <div class="price-card" aria-label="$100 Delivery">
+          <p class="price">$100</p>
+          <div class="price-sub"><strong>Delivery</strong></div>
+          <ul>
+            <li>Up to 3 items</li>
+            <li>5–10 miles from the ReStore</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="included-list" aria-label="What's included in pricing">
+        <div class="check">✔ <span>Pickup from Habitat ReStore</span></div>
+        <div class="check">✔ <span>Delivery to your home</span></div>
+        <div class="check">✔ <span>Professional two-person crew</span></div>
+        <div class="check">✔ <span>Placement in first dry area</span></div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: IMPORTANT DELIVERY FEES -->
+    <section aria-label="Important Delivery Notes">
+      <h2>Important Delivery Notes</h2>
+      <ul>
+        <li>Stairs or apartment access: +$25</li>
+        <li>Elevator buildings, long walk, or tight access: +$25</li>
+        <li>Heavy or oversized items (over ~150 lbs): +$50</li>
+        <li>More than 3 items may require price adjustment</li>
+      </ul>
+
+      <div class="bold-note">
+        Final pricing is confirmed after reviewing delivery address and access details.<br />
+        No additional fees are added unless required.
+      </div>
+    </section>
+
+    <!-- SECTION 5: WHAT’S INCLUDED / NOT INCLUDED -->
+    <section aria-label="Included and Not Included">
+      <h2>What’s Included / Not Included</h2>
+
+      <div class="two-col">
+        <div class="card col" aria-label="Included">
+          <h3>Included</h3>
+          <ul>
+            <li>ReStore pickup</li>
+            <li>Home delivery</li>
+            <li>Professional handling</li>
+          </ul>
+        </div>
+
+        <div class="card col" aria-label="Not Included">
+          <h3>Not Included</h3>
+          <ul>
+            <li>Furniture assembly</li>
+            <li>Haul-away or removal</li>
+            <li>Multiple pickup locations</li>
+            <li>Full moving services</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: DELIVERY DAYS -->
+    <section aria-label="Delivery Days">
+      <h2>Delivery Days</h2>
+      <p style="margin-bottom:10px; color: var(--text); font-weight: 700;">
+        Deliveries are available on:
+        <span style="font-weight:700;">• Wednesdays • Saturdays</span>
+      </p>
+      <p>You will select a delivery window when booking.</p>
+      <p style="margin-bottom:0;">Exact arrival times are not guaranteed.</p>
+    </section>
+
+    <!-- SECTION 7: CALL TO ACTION (AGAIN) -->
+    <section aria-label="Call to action">
+      <h2>Ready to schedule?</h2>
+      <a class="btn" href="#" target="_blank" rel="noopener">Schedule My Delivery</a>
+      <div class="cta-small">You’ll answer a few quick questions so we can prepare correctly.</div>
+    </section>
+
+    <!-- SECTION 8: FOOTER -->
+    <footer class="footer" aria-label="Footer">
+      <div class="name">New Beginnings Moving &amp; Hauling</div>
+      <div class="contact">Call or Text: (267) 386-7460</div>
+      <small>Customer support available during business hours.</small>
+    </footer>
+
+  </main>
+</body>
+</html>
