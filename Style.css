@@ -312,36 +312,44 @@ p{
   color: var(--text);
 }
 
-/* Add-ons box */
+/* Softer Add-ons Section */
 .addons-box{
-  margin-top: 18px;
-  padding: 18px;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  background: #ffffff;
+  margin-top: 24px;
+  padding: 18px 0 0;
+  border-top: 1px solid var(--border); /* thin divider above */
+  background: transparent;            /* remove card look */
 }
 
 .addons-box h3{
-  margin: 0 0 10px;
-  font-size: 18px;
-  font-weight: 900;
+  margin: 0 0 8px;
+  font-size: 15px;        /* smaller */
+  font-weight: 600;       /* softer weight */
+  color: var(--text);
 }
 
 .addons-box ul{
   margin: 0;
-  padding-left: 20px;
-  color: var(--muted);
+  padding-left: 18px;
+  font-size: 14px;        /* slightly smaller */
+  color: var(--muted);    /* secondary color */
 }
 
 .addons-box li{
-  margin: 8px 0;
+  margin: 6px 0;
 }
 
 .pricing-note{
-  margin-top: 14px;
-  font-size: 14px;
+  margin-top: 10px;
+  font-size: 13px;        /* softer */
   color: var(--muted);
   line-height: 1.4;
+}
+
+.pricing-subline{
+  margin: 6px 0 18px;
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 400; /* not bold */
 }
 
 /* Desktop layout */
@@ -349,4 +357,21 @@ p{
   .pricing{
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.powered-by{
+  text-align: center;
+  padding: 24px 0 10px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.powered-by div:first-child{
+  font-weight: 700;
+  color: var(--text);
+}
+
+.powered-by div:last-child{
+  font-size: 13px;
+  margin-top: 4px;
 }
