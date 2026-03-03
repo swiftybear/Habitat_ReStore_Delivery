@@ -379,3 +379,35 @@ p{
   font-size: 13px;
   margin-top: 4px;
 }
+
+/* Partner Logos */
+.partner-logos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 14px;
+}
+
+.partner-logos img{
+  height: 120px;      /* same height */
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-divider{
+  width: 1px;
+  height: 40px;
+  background: var(--border);
+}
+
+/* Mobile refinement */
+@media (max-width: 600px){
+  .partner-logos img{
+    height: 48px;   /* slightly smaller on mobile */
+  }
+
+  .logo-divider{
+    height: 32px;
+  }
+}
