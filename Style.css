@@ -78,7 +78,11 @@ p{
   color: var(--muted);
   text-align: center;
 }
-
+.reassurance{
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--muted);
+}
 /* New trust strip + urgency */
 .trust-strip{
   margin: 14px auto 10px;
